@@ -26,7 +26,7 @@ li {
     max-width: 1280px;
     height: 100%;
     margin: 0 auto;
-    padding: 1rem;
+    padding: 0 1rem;
 }
 
 body {
@@ -118,6 +118,7 @@ nav .main-nav {
     gap: 1.5rem;
     padding: 2rem 0;
     background-color: var(--primary);
+    pointer-events: none;
 }
 
 /* Main */
@@ -162,8 +163,8 @@ main section {
 
 /* Animations */
 @keyframes burger-top {
-    50% {transform: translate(0, .85rem) rotate(0);}
-    100% {transform: translate(0, .85rem) rotate(45deg);}
+    50% {transform: translate(0, .75rem) rotate(0);}
+    100% {transform: translate(0, .75rem) rotate(45deg);}
 }
 
 @keyframes burger-mid {
@@ -172,13 +173,13 @@ main section {
 }
 
 @keyframes burger-bot {
-    50% {transform: translate(0, -.85rem) rotate(0);}
-    100% {transform: translate(0, -.85rem) rotate(135deg);}
+    50% {transform: translate(0, -.60rem) rotate(0);}
+    100% {transform: translate(0, -.60rem) rotate(135deg);}
 }
 
 @keyframes burger-top-rev {
-    0% {transform: translate(0, .85rem) rotate(35deg);}
-    50% {transform: translate(0, .85rem) rotate(0);}
+    0% {transform: translate(0, .75rem) rotate(35deg);}
+    50% {transform: translate(0, .75rem) rotate(0);}
     100% {transform: translate(0, 0) rotate(0);}
 }
 
@@ -188,8 +189,8 @@ main section {
 }
 
 @keyframes burger-bot-rev {
-    0% {transform: translate(0, -.85rem) rotate(135deg);}
-    50% {transform: translate(0, -.85rem) rotate(0);}
+    0% {transform: translate(0, -.60rem) rotate(135deg);}
+    50% {transform: translate(0, -.60rem) rotate(0);}
     100% {transform: translate(0, 0) rotate(0);}
 }
 
@@ -216,7 +217,7 @@ main section {
         padding: 0;
     }
 
-    /* #about .content {
+    #about .content {
         font-size: 1rem;
-    } */
+    }
 }
