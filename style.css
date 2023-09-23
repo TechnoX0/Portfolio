@@ -108,7 +108,6 @@ nav {
 
 #burger-menu.active ~ nav {
     height: 100vh;
-    transition: all .5s ease-in-out;
 }
 
 nav .main-nav {
@@ -118,7 +117,6 @@ nav .main-nav {
     gap: 1.5rem;
     padding: 2rem 0;
     background-color: var(--primary);
-    pointer-events: none;
 }
 
 /* Main */

@@ -10,11 +10,6 @@ MENU_TOGGLE.forEach(toggle => {
     })
 })
 
-// MENU_TOGGLE.addEventListener("click", () => {
-//     BURGER_MENU.classList.toggle("active")
-//     BURGER_MENU.classList.toggle("inactive")
-// })
-
 addEventListener("resize", () => {
     if (screen.width > 480) {
         BURGER_MENU.classList.remove("active")
