@@ -1,7 +1,7 @@
 :root {
     --primary: #050505;
     --secondary: #fefefe;
-
+    --highlight: orange;
     --menu-timing: 500ms;
 }
 
@@ -125,7 +125,7 @@ main {
 }
 
 main section:nth-child(even) {
-    background-color: gray;
+    /* background-color: gray; */
 }
 
 main section {
@@ -157,6 +157,62 @@ main section {
     align-self: flex-start;
     position: absolute;
     bottom: 4rem;
+}
+
+#projects {
+    padding: 5rem .5rem 1rem;
+}
+
+#projects .content {
+    display: grid;
+    grid-template-columns: minmax(12rem, 1fr);
+    grid-template-rows: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 2rem 3rem;
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    background-color: darkgray;
+    padding: 0 1.5rem 1rem;
+    border-radius: .5rem;
+}
+
+.project img {
+    border-radius: .5rem;
+    max-width: calc(100% - 1rem);
+    object-fit: cover;
+    transform: translate(.5rem, -1rem);
+}
+
+#projects .project .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+    height: 100%;
+}
+
+.project p {
+    margin: 1rem 0;
+}
+
+.project .tags {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.project .tag {
+    background-color: var(--highlight);
+    border-radius: 1rem;
+    padding: 0 1rem;
+}
+
+/* Footer */
+footer #contact {
+    height: 30rem;
+    background-color: orange;
 }
 
 /* Animations */
@@ -217,5 +273,16 @@ main section {
 
     #about .content {
         font-size: 1rem;
+    }
+
+    #projects .content {
+        grid-template-columns: repeat(2, minmax(10rem, 1fr));
+        gap: 2rem 1rem;
+    }
+}
+
+@media (min-width: 1080px) {
+    #projects .content {
+        grid-template-columns: repeat(3, minmax(10rem, 1fr));
     }
 }
