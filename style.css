@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;700;800&display=swap');
+
 :root {
     --primary: #050505;
     --secondary: #fefefe;
@@ -88,10 +90,10 @@ header {
     animation: burger-bot var(--menu-timing) ease-in-out forwards;
 }
 
-.line {
+.bar {
     width: 100%;
     height: .2rem;
-    background-color: orange;
+    background-color: var(--highlight);
     border-radius: .1rem;
 }
 
@@ -211,8 +213,35 @@ main section {
 
 /* Footer */
 footer #contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 30rem;
-    background-color: orange;
+    background-color: gray;
+}
+
+#contact .links {
+    display: flex;
+    gap: 2rem;
+}
+
+#contact .link {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: .8rem 1.2rem;
+    color: var(--primary);
+    background-color: var(--highlight);
+    border-radius: .3rem;
+}
+
+#contact .link img {
+    width: 1.2rem;
+}
+
+#contact .link p {
+    font-size: 1.1rem;
+    font-weight: 500;
 }
 
 /* Animations */

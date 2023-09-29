@@ -3,9 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&family=Poppins:wght@300;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="./main.js" defer></script>
     <title>Portfolio</title>
@@ -15,9 +12,9 @@
         <div id="header">
             <h2>PVM</h2>
             <div id="burger-menu" class="toggle inactive">
-                <div class="line top"></div>
-                <div class="line mid"></div>
-                <div class="line bot"></div>
+                <div class="bar top"></div>
+                <div class="bar mid"></div>
+                <div class="bar bot"></div>
             </div>
             <nav>
                 <ul class="main-nav">
@@ -41,7 +38,7 @@
             <section id="projects">
                 <div class="content">
                     <div class="project">
-                        <img src="./assets/filler.jpg" alt="filler image">
+                        <img src="./assets/img/filler.jpg" alt="filler image">
                         <div class="content">
                             <h1>Project Name</h1>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo rerum doloremque cum explicabo quos possimus veniam sed asperiores, ut labore quod qui obcaecati autem laudantium perspiciatis. Quo soluta quod fugiat?</p>
@@ -60,7 +57,20 @@
             <div class="content">
                 <h1>Do you like something I made?</h1>
                 <p>Let's have a chat.</p>
-                
+                <div class="links">
+                    <a href="https://github.com/TechnoX0" class="link" target="_blank">
+                        <img src="./assets/svg/github.svg" alt="github">
+                        <p>@TechnoDev</p>
+                    </a>
+                    <a href="https://codepen.io/TechnoZ" class="link" target="_blank">
+                        <img src="./assets/svg/codepen.svg" alt="codepen">
+                        <p>@TechnoZ</p>
+                    </a>
+                    <a href="mailto:meroypaulvincent@gmail.com" class="link" target="_blank">
+                        <img src="./assets/svg/mail.svg" alt="mail">
+                        <p>meroypaulvincent@gmail.com</p>
+                    </a>
+                </div>
             </div>
         </section>
     </footer>
